@@ -1,0 +1,19 @@
+Package: Dtoolbag
+Type: Package
+Title: Helpful tools for WQES data wrangling
+Version: 0.1.4
+Author: David Colvin
+Maintainer: not maintained <email_davidc@yahoo.com>
+Description: Functions to help the WQES section.
+    Download data from CDEC and USGS-NWIS into data tables formatted nice nice. 
+    (Note:WDL website changed and download functions no longer work in R)
+License: Not responsible
+Encoding: UTF-8
+Depends: data.table(>= 1.9.4),
+         stringr
+Imports: zoo,
+         ggplot2,
+         jsonlite,
+         httr
+LazyData: true
+RoxygenNote: 7.2.3
