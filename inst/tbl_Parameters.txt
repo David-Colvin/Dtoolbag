@@ -1,0 +1,36 @@
+"PK_Parameters","Parameter","NameLong","Units","Label","ParamR","EcoWatchName","KorCalName","KorExportName","OtherName","WDL_name","HydstraNum","CDECNum","USGSNum","ProbeType","Hydstra_WQS_Full_Column","WQESPrimary","ParamOrder","Param_old","WQESRatingPrimary","WDL_Param"
+1,"Temp_C","Temperature","°C","Temperature (°C)","Temp","Temp",,"Temp °C",,"WATER_TEMPERATURE_POINT","450","25","00010","Temp/EC",2,1,1,"Temp",1,"WaterTemp"
+2,"SpCond_uS/cm","Conductivity","µS/cm","Specific Conductivity (µS/cm)","SpCond","SpCond","Sp Cond (µS/cm)","SpCond µS/cm",,"CONDUCTIVITY_POINT","821","100","00095","Temp/EC",14,1,4,"SpCond",1,"ECat25C"
+3,"Turbidity_NTU","Turbidity","NTU","Turbidity (NTU)",,,"Turbidity (NTU)","Turbidity NTU",,"TURBIDITY_POINT","810","27",,"Turbidity",,1,10,"Turb_",0,
+4,"Turbidity_FNU","Turbidity","FNU","Turbidity (FNU)","Turb","Turbid+","Turbidity (FNU)","Turbidity FNU",,"TURBIDITY_POINT","810","27","63680","Turbidity",17,1,9,"Turb",1,"Turbidity"
+5,"pH","pH",,"pH","pH","pH","pH","pH",,"PH_POINT","860","62",,"pH",11,1,7,"pH",1,"pH"
+6,"DO_sat","DO Percent","%","DO Percent (%)","DOsat","ODOsat","DO (% Sat)","ODO % sat",,"PERCENTAGE_DISSOLVED_OXYGEN_POINT","865",,,"DO",8,1,2,"DOsat",0,"DisolvedOxygenPercentage"
+7,"DO_mg/L","DO Concentration","mg/L","DO Concentration (mg/L)","DOconc","ODO","DO (mg/L)","ODO mg/L",,"OXYGEN_DISSOLVED_POINT","2351","61","00300","DO",5,1,3,"DOc",1,"DisolvedOxygen"
+8,"Chlorophyll_ug/L","Chlorophyll","µg/L","Chlorophyll (µg/L)","Chlor","Chl","Chlorophyll (µg/L)","Chlorophyll ug/L",,"TOTAL_CHLOROPHYLL_POINT","7004","28","32316","Chlorophyll",23,1,14,"Chlor",1,"Chlorophyll"
+9,"Chlorophyll_RFU","Chlorophyll","RFU","Chlorophyll (RFU)","ChlorR",,"Chlorophyll (RFU)","Chlorophyll RFU",,"TOTAL_CHLOROPHYLL_POINT","7006",,,"Chlorophyll",,1,13,"Chlor_",0,
+10,"BGA_ug/L","Phycocyanin","µg/L",,"BGA",,"Phycocyanin (µg/L)","TAL PC ug/L","BGA PC ug/L",,,,,"Chlorophyll",29,1,12,"BGA",1,"Phycocyanin"
+11,"BGA_RFU","Phycocyanin","RFU",,"BGAR",,"Phycocyanin (RFU)","TAL PC RFU","BGA PC RFU",,,,,"Chlorophyll",,0,11,"BGA_",0,
+12,"Depth_m","Depth","m","Depth (m)","Depth",,"Depth (m)","Depth m",,,"630",,,"Depth",26,1,17,"Depth",1,"Depth"
+14,"FlowTSL","Flow","CFS","Flow (cfs)",,,,,,,,"11013",,,,0,99,"FlowTSL",0,
+15,"FlowOSJ","Flow","CFS","Flow (cfs)",,,,,,,,"13467",,,,0,99,"FlowOSJ",0,
+16,"FlowHOL","Flow","CFS","Flow (cfs)",,,,,,,,"13539",,,,0,99,"FlowHOL",0,
+17,"FlowORQ","Flow","CFS","Flow (cfs)",,,,,,,,"13544",,,,0,99,"FlowORQ",0,
+18,"FlowHLT","Flow","CFS","Flow (cfs)",,,,,,,,"13528",,,,0,99,"FlowHLT",0,
+19,"FlowTRN","Flow","CFS","Flow (cfs)",,,,,,,,"13534",,,,0,99,"FlowTRN",0,
+20,"FlowVCU","Flow","CFS","Flow (cfs)",,,,,,,,"13460",,,,0,99,"FlowVCU",0,
+21,"FlowOBI","Flow","CFS","Flow (cfs)",,,,,,,,"11010",,,,0,99,"FlowOBI",0,
+22,"FlowMOK","Flow","CFS","Flow (cfs)",,,,,,"14526",,"20",,,,0,99,"FlowMOK",0,
+23,"TempMin_C","Daily Minimum Temperature","°C","Daily Min Temp (°C)",,,,,,,,,"00010_00002",,,0,99,"TempMin",0,
+24,"TempMax_C","Daily Maximum Temperature","°C","Daily Max Temp (°C)",,,,,,,,,"00010_00001",,,0,99,"TempMax",0,
+25,"Stage","Stage","Ft","Stage (ft)","Stage",,,,,"STAGE_15-MINUTE_DATA","233","1","00065",,,0,99,"Ht",0,"Stage"
+27,"FlowFAL","Flow","CFS","Flow (cfs)",,,,,,,,"14521",,,,0,99,"FlowFAL",0,
+28,"Velocity","Velocity","FPS","Velocity (fps)","Velocity",,,,,"VELOCITY","621","27941",,,,0,99,"Vel",0,"Velocity"
+29,"Flow_CFS","Flow","CFS","Flow (cfs)","Flow",,,,,"FLOW_15-MINUTE_DATA","262","20","00060",,,0,90,"Flow",0,"Flow"
+30,"Salinity_ppt","Salinity","ppt","Salinity (ppt)","Sal","Sal",,"Sal ppt",,"PRACTICAL_SALINITY_PSS-15_POINT","806",,,"Temp/EC",20,1,5,"Sal",0,"Salinity"
+31,"fDOM_QSU",,"QSU",,"fDom",,,"fDOM QSU",,,"3081",,,"fDOM",32,1,16,"fDOM",0,
+32,"fDOM_RFU",,"RFU",,"fDomR",,,"fDOM RFU",,,,,,"fDOM",,1,15,"fDOM_",0,
+33,"pH_mV","pH","mV","pH_mV","pHmV",,,"pH mV",,,,,,"pH",,0,8,"pH_",0,
+34,"Barometer_mmHg",,"mmHg",,"Baro",,,"Barometer mmHg",,,,,,,,0,99,"Barometer",0,
+35,"Salinity_psu","Salinity","psu","Salinity (psu)",,"Sal",,"Sal psu",,"PRACTICAL_SALINITY_PSS-15_POINT","806",,,"Temp/EC",20,1,6,"Sal",0,
+36,"TidalFlow","Tidally Filtered Flow","CFS","Tidally Filtered Flow (cfs)","TidalFlow",,,,,,,,"72137",,,0,99,,0,
+37,"Elevation","Elevation","ft","Elevation (ft)","Elevation",,,,,,"287",,,,,0,99,,0,

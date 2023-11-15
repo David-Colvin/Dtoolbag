@@ -1,0 +1,110 @@
+"PK_Stations","StationCode","StationName","ID_HydstraWQ","ID_HydstraFlow","ID_HydstraSurface","ID_USGS","ID_FLIMS","Region","Group","SubGroup","WQESmanaged","RunName","Access","LeadStaff","Latitude_WGS84_f","Longitude_WGS84_f","Latitude_NAD83_f","Longitude_NAD83_f","MapNum","PlotOrder","FundingSource","WQESCode","Terminated","Telemetry","SondeSeries","Logger_Variant","SeasonalStation"
+78,"SUR","Sugar Cut",,,,,,"South Delta",,"5",0,,,,"37.78847000","-121.41933300","","",,,,,0,0,,,0
+79,"TPS","Tom Paine Slough abv The Mouth",,"B95420",,,,"South Delta",,"5",0,,,,"37.79053497","-121.41863251","","",,,,,0,0,,,0
+80,"HBP","Harvey O Banks Pumping Plant",,,,,,"South Delta",,,0,,,,"37.80194400","-121.62027800","","",,,,,0,0,,,0
+81,"SJR","San Joaquin River McCune Station Nr Vernalis",,,,,,"South Delta",,,0,,,,"37.67929000","-121.26511000","","",,,,,0,0,,,0
+82,"VNS","San Joaquin River Near Vernalis",,,,"11303500",,"South Delta",,,0,,,,"","","","",,,,,0,0,,,0
+83,"VNS2","San Joaquin River @ Vernalis","B0702000",,,,,"South Delta",,,0,,,,"","","","",,,,,0,0,,,0
+1,"MIR","Miner Slough near Sacramento River","B9147000","B91470Q",,,"B9S81421400","North Delta",,,1,,"Boat","PScott","38.23603190","-121.66606810","38.23602683","-121.66605500",1,3,"BDO","MIR",0,1,"X","WQES_Full_w_BGA_fDOM",0
+2,"SXS","Steamboat Slough near Sacramento River","B9145000",,,,"B9S81131386","North Delta",,,1,,"Boat","PScott","38.19127210","-121.63789410","38.19126700","-121.63788100",2,2,"BDO","SXS",0,1,"6","WQS-Full",0
+3,"SOI","Sacramento R Downstream of Isleton","B9125000",,,,"B9D81051394","North Delta",,,1,,"Boat","PScott","38.17559100","-121.65691900","38.17558590","-121.65690590",3,1,"BDO","SOI",0,1,"6","WQS-Full",0
+4,"FCT","Fisherman's Cut","B9505000","B95050Q",,,"B9D80411389","Central Delta",,"1",1,,"Boat","JHamilton","38.05546900","-121.66712900","38.05546390","-121.66711590",4,6,"BDO","FCT",0,1,"X","WQS-C_DO-Turb-Depth",0
+5,"TSL","Three Mile Slough near SJR","B9506100",,,"11337080","B9D80621412","Central Delta",,"1",1,,"Boat","JHamilton","38.10324800","-121.68616900","38.10324290","-121.68615590",5,7,"O&M","TSL",0,1,"X","WQS-C_DO-Turb-Depth",0
+6,"MOK","Mokelumne River near Hwy 12","B9409500",,,"11336930","B9204500","Central Delta",,,1,,"Boat","JHamilton","38.10817700","-121.57644100","38.10817190","-121.57642790",6,8,"O&M","MOK",0,1,"X","WQS-B-Turb-Depth",0
+7,"OBI","Old River near Bacon Island at USGS Pile","B9525100",,,"11313405","B9D75821343A","Central Delta",,,1,,"Boat","PScott","37.96794800","-121.57443300","37.96794290","-121.57441990",7,17,"O&M","OBI",0,1,"X","WQS-Full",0
+8,"BET","Bethel Island @ Piper Slough","B9504500",,,,"B9D80251385","Central Delta",,"2",1,,"Land","PScott","38.03335400","-121.61984000","38.03334890","-121.61982690",8,10,"BDO","BET",0,1,"X","WQS-C_DO-Turb-Depth",0
+9,"FAL","False River near Oakley","B9504400",,,"11313440","B9D80331400","Central Delta",,"1",1,,"Boat","JHamilton","38.05546900","-121.66712900","38.05546390","-121.66711590",9,5,"O&M","FAL",0,1,"X","WQS-D_DO-Turb-Chlor-Depth",0
+10,"HOL","Holland Cut near Bethel Island","B9512000",,,"11313431","B9D80101349","Central Delta",,"2",1,,"Boat","JHamilton","38.01582100","-121.58212400","38.01581590","-121.58211090",10,11,"O&M","HOL",0,1,"X","WQS-C_DO-Turb-Depth",0
+11,"HLT","Middle River near Holt","B9545800",,,"11312685","B9D80021306","Central Delta",,"3",1,,"Boat","JHamilton","38.00308100","-121.51093300","38.00310590","-121.51079290",11,18,"BDO","HLT",0,1,"X","WQS-Turb-Chlor",0
+12,"ORQ","Old River at Quimby Island","B9520000",,,"11313434","B9D80161339","Central Delta",,"2",1,,"Boat","JHamilton","38.02712400","-121.56473100","38.02711890","-121.56471790",12,12,"O&M","ORQ",0,1,"6","WQS-B-Turb-Depth",0
+13,"OSJ","Old River near Franks Tract","B9510800",,,"11313452","B9D80431347","Central Delta",,,1,,"Boat","JHamilton","38.07124700","-121.57838200","38.07124190","-121.57836890",13,9,"SWPAO","OSJ",0,1,"X","WQS-D_DO-Turb-Chlor-Depth",0
+14,"BLP","San Joaquin River at Blind Point","B9502900",,,,,"Central Delta",,,1,,"Land","PScott","38.03250000","-121.71908300","38.03249490","-121.71906990",14,4,"DES","BLP",0,1,"X","WQS-Full_NoDepth",0
+15,"TRN","Turner Cut near Holt","B9561600",,,"11311300","B9D75961273","Central Delta",,"3",1,,"Boat","JHamilton","37.99253300","-121.45403200","37.99252790","-121.45401890",19,19,"SWPAO","TRN",0,0,"X","WQS-Full",0
+16,"WDC","Werner Dredger Cut at Palm Tract","B9522500",,,,"B9D75781357","Rock Slough",,,1,,"Boat","PScott","37.96399600","-121.59485000","37.96399090","-121.59483690",15,15,"SWPAO","WDC",0,0,"6","WQS-EC",0
+17,"HCHM","Holland Cut at Holland Marina","B9524900",,,,"B9D75841349","Rock Slough",,,1,,"Land","PScott","37.97369400","-121.58127800","37.97368890","-121.58126490",16,16,"SWPAO","HCHM",0,0,"X","WQS-EC",0
+18,"RSCC","Rock Slough at CCWD/Trash Rack","B9522200",,,,"B9522200","Rock Slough",,,1,,"Boat","PScott","37.97619200","-121.63980300","37.97618690","-121.63978990",17,13,"SWPAO","RSCC",0,0,"6","WQS-EC",0
+19,"DRB","Rock Slough at Delta Road Bridge","B9521600",,,,"B9D75861372","Rock Slough",,,1,,"Boat","PScott","37.97675000","-121.62008300","37.97674490","-121.62006990",18,14,"SWPAO","DRB",0,0,"X","WQS-EC",0
+20,"PDUP","Paradise Cut Upstream","B9541050",,,,"B9D74811224","South Delta",,"4",1,,"Land","DColvin","37.80102700","-121.37308900","37.80102190","-121.37307600",20,,"O&M","PDUP",0,0,"6","WQS-EC",0
+21,"PDC","Paradise Cut","B9541000","B95410Q",,,"B9D74811247","South Delta",,"4",1,,"Boat","DColvin","37.80205980","-121.41225640","37.80205470","-121.41224330",21,33,"O&M","PDC",0,1,"6","WQS-EC",0
+22,"SGA","Sugar Cut at Golden Anchor","B9541500","B95415Q",,,"B9D74761253","South Delta",,"5",1,,"Boat","DColvin","37.79286000","-121.42149500","37.79285490","-121.42148190",22,31,"O&M","SGA",0,1,"6","WQS-EC",0
+23,"ORX","Old River above Doughty Cut","B9539000","B95390",,,"B9D74871232","South Delta",,,1,,"Boat","DColvin","37.81099720","-121.38657500","37.81099210","-121.38656190",23,34,"O&M","ORX",0,1,"X","WQS-Full",0
+24,"SJD","San Joaquin River at Dos Reis Park","B9576000","B95760",,,,"South Delta",,"1",1,,"Boat","DColvin","37.82233120","-121.31772440","37.82232610","-121.31771140",24,36,"O&M","SJD",0,1,"6","WQS-EC",0
+25,"VCU","Victoria Canal","B9528500",,,"11312672","B9D75231318","South Delta",,"2",1,,"Boat","TSalman","37.87094400","-121.53000000","37.87093890","-121.52998690",25,20,"O&M/BDO","VCU",0,1,"X","WQS-Full",0
+26,"GLC","Grant Line Canal near Clifton Court Forebay","B9529500",,,,"B9D72921327","South Delta",,"6",1,,"Boat","TSalman","37.82012800","-121.54466100","37.82012290","-121.54466100",26,26,"BDO","GLC",0,1,"X","WQS-Full",0
+27,"GCT","Grant Line Canal at Tracy Blvd","B9530000",,,,"B9D74921269","South Delta",,"1",1,,"Boat","TSalman","37.82011100","-121.44983300","37.82010590","-121.44981990",27,,"BDO","GCT",0,0,"X",,0
+28,"GLE","Grant Line Canal East ","B9532000","B95320",,,"B9D74921261","South Delta",,"1",1,,"Boat","DColvin","37.82025000","-121.43486100","37.82024490","-121.43484790",28,30,"BDO","GLE",0,1,"X","WQS-Full",0
+29,"DGL","Doughty Cut above GLC","B9532500","B95325",,,"B9D74911256","South Delta",,"4",1,,"Boat","DColvin","37.81472200","-121.42522200","37.81471690","-121.42520890",29,,"BDO","DGL",1,0,,,0
+30,"MUP","Middle River at Union Point","B9550000",,"B95500",,"B9D75351292","South Delta",,"2",1,,"Land","TSalman","37.89077800","-121.48836100","37.89077290","-121.48834790",30,,"BDO","MUP",0,0,"X",,0
+31,"MRX","Middle River near Tracy Blvd","B9550600",,,,"B9D75291280","South Delta",,"2",1,,"Land","TSalman","37.88142500","-121.46739900","37.88141990","-121.46738590",31,21,"BDO","MRX",0,1,"X","WQS-Full",0
+32,"MHO","Middle River at Howard Road","B9553100",,,,"B9D75261230","South Delta",,"2",1,,"Land","TSalman","37.87618400","-121.38328800","37.87617890","-121.38327490",32,22,"BDO","MHO",0,1,"X","WQS-Full",0
+33,"MRU","Middle River at Undine Road","B9554100","B95541",,,"B9D75011230","South Delta",,"2",1,,"Land","TSalman","37.83394080","-121.38575610","37.83393570","-121.38574300",33,23,"BDO","MRU",0,1,"X","WQS-Full",0
+34,"ODM","Old River below DMC barrier","B9536500","B95365",,,"B9536500","South Delta",,"6",1,,"Boat","TSalman","37.81097200","-121.54441700","37.81096690","-121.54440390",34,27,"BDO","ODM",0,1,"X","WQS-Full",0
+35,"OAD","Old River above DMC barrier","B9536600",,,,"B9536600","South Delta",,"3",1,,"Land","DColvin","37.81025000","-121.54219400","37.81024490","-121.54218090",35,,"BDO","OAD",1,0,"6",,0
+36,"ORM","Old River above Mountain House Creek","B9537000","B95370Q",,,"B9537000","South Delta",,"3",1,,"Boat","TSalman","37.79384080","-121.51738130","37.79383570","-121.51736820",36,28,"O&M","ORM",0,1,"X","WQS-Full",0
+37,"TWA","Old River at TWA","B9537800",,,,"B9D74821274","South Delta",,"3",1,,"Land","BJones","37.80283300","-121.45744400","37.80282790","-121.45743090",37,29,"BDO","TWA",0,1,"6","WQS-Full",0
+38,"OH1","Old River near Head","B9540000","B95400Q","B95400",,"B9D74851200","South Delta",,"1",1,,"Boat","DColvin","37.80759500","-121.33121800","37.80758990","-121.33120500",38,35,"BDO","OH1",0,1,"X","WQS-Full",0
+39,"TPI","Tom Paine Slough above Intake Structure","B9542100",,"B95421",,"B9542100","South Delta",,"5",0,,"Boat",,"37.79008800","-121.41845000","37.79008290","-121.41843690",39,32,"BDO","TPI",0,1,"6","WQS-EC",0
+40,"TRB8","Truckee River at Bridge 8","G7166310",,,,"G7166310","Truckee",,,1,,"Land","AMaguire","39.22933000","-120.20522000","39.22932470","-120.20520700",40,,"CalNEVA","TRB8",0,0,"X","WQS-NoChlor",0
+41,"TRTT","Truckee River above TTSA","G7151310",,,,"G7151310","Truckee",,,1,,"Land","AMaguire","39.33820000","-120.13326000","39.33819470","-120.13324700",41,,"CalNEVA","TRTT",0,0,"X","WQS-NoChlor",0
+42,"LAB","Little Truckee above Boca","G7216000",,,"10344400","G7216000","Truckee",,,1,,"Land","AMaguire","39.43586500","-120.08453700","39.43585970","-120.08452400",42,,"CalNEVA","LAB",0,0,"X","WQS-NoChlor",0
+43,"FAR","Truckee River at Farad","G7119500",,,"10346000","G7119500","Truckee",,,1,,"Land","AMaguire","39.42768700","-120.03406400","39.42768170","-120.03405100",43,,"CalNEVA","FAR",0,0,"X","WQS-NoChlor",0
+44,"ORI","Old River at Clifton Court Intake","B9534100","B95341",,,"B9D74971332","South Delta",,"6",1,,"Boat","TSalman","37.82800000","-121.55260000","37.82800000","-121.55260000",,25,"DES","ORI",0,0,"6","WQS-Full_NoDepth",0
+45,"WCI","West Canal at Clifton Court Intake","B9533800","B95338",,,"B9D74991332","South Delta",,"6",1,,"Boat","TSalman","37.83160510","-121.55401310","37.83160000","-121.55400000",,24,"DES","WCI",0,0,"6","WQS-Full_NoDepth",0
+46,"BDT","San Joaquin R at Brandt Bridge","B95740","B95740Q",,,,"South Delta",,,0,,,,"37.86500000","-121.32310000","","",,,,,0,0,,,0
+47,"MAB","Middle River Above Barrier",,"B95502",,,,"South Delta",,,0,,,,"37.88518143","-121.47276306","","",,,,,0,0,,,0
+48,"MSD","San Joaquin River at Mossdale Bridge","B95820","B95820Q",,,"B9D74721184","South Delta",,,0,,,,"37.78600000","-121.30600000","","",,,,,0,0,,,0
+49,"OLD","Old River near Tracy","B95380","B95380Q","B95380",,"B9D74831270","South Delta",,"3",0,,,,"37.80480957","-121.44956207","","",,,,,0,0,,,0
+50,"PCO","Paradise Cut above Old River","B95410",,,,,"South Delta",,,0,,,,"37.80194440","-121.41230600","","",,,,,0,0,,,0
+51,"TTC","Truckee River at Tahoe City",,,,"10337500","G7166500","Truckee",,,0,,,,"39.16629600","-120.14435900","","",,,,,0,0,,,0
+52,"TRK","Truckee River near Truckee",,,,"10338000","G7160000","Truckee",,,0,,,,"39.29629500","-120.20547500","","",,,,,0,0,,,0
+53,"DNC","Donner Creek at Donner Lake",,,,"10338500",,"Truckee",,,0,,,,"39.32351700","-120.23436500","","",,,,,0,0,"Hobo",,0
+54,"TRBLMC","Truckee River below Martis Creek",,,,"10339410",,"Truckee",,,0,,,,"39.35305600","-120.11944400","","",,,,,0,0,,,0
+55,"PTK","Prosser Creek below Prosser Creek Dam",,,,"10340500",,"Truckee",,,0,,,,"39.37324000","-120.13158700","","",,,,,0,0,,,0
+56,"LTK","Little Truckee River below Boca Dam",,,,"10344500",,"Truckee",,,0,,,,"39.38685200","-120.09547600","","",,,,,0,0,,,0
+57,"TBB","Truckee River at Boca Bridge","G7125000",,,"10344505",,"Truckee",,,0,,,,"39.38518500","-120.08769800","","",,,,,0,1,,,0
+59,"TrkAbvLtr","Truckee River above Little Truckee River - WQ","G7130000",,,,,"Truckee",,,1,,,"AMaguire","39.38354600","-120.09503500","","",,,,,0,0,"Hobo","WQS-HOBO",0
+60,"TrkBlwPrc","Truckee River below Prosser Creek","G7135000",,,,,"Truckee",,,1,,,"AMaguire","39.37095000","-120.11655200","","",,,,,0,0,"Hobo","WQS-HOBO",0
+61,"TrkAbvPrc","Truckee River above Prosser Creek - WQ","G7140500",,,,,"Truckee",,,1,,,"AMaguire","39.36986500","-120.11687000","","",,,,,0,0,"Hobo","WQS-HOBO",0
+62,"TrkBlwDnc","Truckee River below Donner Creek - WQ","G7158500",,,,,"Truckee",,,1,,,"AMaguire","39.31750300","-120.19884800","","",,,,,0,0,"Hobo","WQS-HOBO",0
+63,"TrkAbvDnc","Truckee River above Donner Creek - WQ","G7159000",,,,,"Truckee",,,1,,,"AMaguire","39.31558700","-120.20160200","","",,,,,0,0,"Hobo","WQS-HOBO",0
+64,"LtrAbvTrk","Little Truckee River above Truckee River - WQ","G7200500",,,,,"Truckee",,,1,,,"AMaguire","39.38503200","-120.09510600","","",,,,,0,0,"Hobo","WQS-HOBO",0
+65,"LtrBlwBoca","Little Truckee River below Boca Resevoir - WQ","G7201000",,,,,"Truckee",,,0,,,,"39.38677500","-120.09554100","","",,,,,0,0,"Hobo",,0
+66,"DncAbvTrk","Donner Creek above Truckee River - WQ","G7700000",,,,,"Truckee",,,1,,,"AMaguire","39.31680900","-120.20170800","","",,,,,0,0,"Hobo","WQS-HOBO",0
+67,"PrcAbvTrk","Prosser Creek above Truckee River","G7310000",,,,,"Truckee",,,1,,"Land","AMaguire","39.37034000","-120.11789100","","",,,,,0,0,"Hobo","WQS-HOBO",0
+69,"RMB","Rominger Bridge at Colusa Basin Drain","A0C85051515",,,,,"Yolo Bypass",,,1,,"Land","AMaguire","","","","",,,,,0,0,"X","WQS-Full",1
+70,"LIS","Yolo Bypass near Lisbon Weir","B9156000",,,,"B9D82851352","Yolo Bypass",,,1,,,"AMaguire","","","","",,,,,0,0,"X","WQS-Full",0
+71,"STTD","Toe Drain at Screw Trap","A0D82120386",,,,,"Yolo Bypass",,,1,,,"AMaguire","","","","",,,,,0,0,"X","WQS-Full",0
+73,"RD22","Toe Drain at Rd. 22","A0D84061386",,,,,"Yolo Bypass",,,1,,,"AMaguire","","","","",,,,,0,0,"X","WQS-Full",0
+74,"I80","Toe Drain at I80","A0D83441350",,,,,"Yolo Bypass",,,1,,,"AMaguire","","","","",,,,,0,0,"X","WQS-Full",0
+75,"RCS","Ridge Cut Slough","A0D84761435",,,,,"Yolo Bypass",,,1,,,"AMaguire","","","","",,,,,0,0,,"WQS-Full",0
+76,"CCI","Clifton Court Intake",,,,,,"South Delta",,,0,,,,"","","","",,,,,0,0,,,0
+77,"UNI","Union Island",,,,,,"South Delta",,"1",0,,,,"37.82210100","-121.37499000","","",,,,,0,0,,,0
+84,"TEST","Test Station","B00000",,,,,,,,1,,,,"","","","",,,,,1,0,,"WQS_Full2",0
+85,"GLAB","Grant Line Canal above Barrier",,,"B95310",,,"South Delta",,,0,,,,"","","","",,,,,0,0,,,0
+87,"BL5","Below Base of Toe Drain in Prospect Slough",,,,,"B9D81651399","Prospect Slough",,,1,,"Boat","Ldavis","38.27446000","-121.66565200","","",,,,"Bl5",0,0,"X","WQES_Full_w_BGA_fDOM",1
+88,"SJJ","San Joaquin River at Jersey Point",,,,"11337190",,"Central Delta",,,0,,,,"","","","",,,,,0,0,,,0
+89,"MDM","Middle River at Middle River",,,,"11312676",,"South Delta",,,0,,,,"","","","",,,,,0,0,,,0
+90,"OH4","Old River at Highway 4",,,,"11313315",,"South Delta",,,0,,,,"","","","",,,,,0,0,,,0
+91,"RVB","Sacramento River at Rio Vista Bridge",,,,,,"North Delta",,,0,,,,"","","","",,,,,0,0,,,0
+92,"RYF","Cache Slough above Ryer Island Ferry",,,,"11455385",,"North Delta",,,0,,,,"","","","",,,,,0,0,,,0
+93,"LIB","Liberty Island at Approx Cntr S End",,,,"11455315",,"Yolo Bypass",,,0,,,,"","","","",,,,,0,0,,,0
+95,"DSJ","Dutch Slough at Jersey Island",,,,"11313433",,"South Delta",,,0,,,,"","","","",,,,,0,0,,,0
+96,"SUS","Steam Boat Slough below Sutter Slough","B91479",,,,,"North Delta",,,0,,,,"","","","",,,,,0,0,,,0
+97,"MHCM","Mountain House Creek (SOR31)","B9536900",,,,,"South Delta",,,1,,"Boat","DColvin","37.79691800","-121.52564200","","",,,,,0,0,"Hobo","WQS-EC",0
+98,"WCNM","Wicklund Cut near Mouth (SOR28)","B9537100",,,,,"South Delta",,,1,,"Boat","DColvin","37.78972600","-121.51624400","","",,,,,0,0,,"WQS-EC",0
+99,"WCBR","Wicklund Cut at Bethany Rd Bridge","B9537200",,,,,"South Delta",,,1,,"Boat","DColvin","37.78038600","-121.51732078","","",,,,,0,0,,"WQS-EC",0
+100,"OBRD","Old River at Bethany Rd Drain (SOR24)","B9537400",,,,,"South Delta",,,1,,"Boat","DColvin","37.78530000","-121.50460000","","",,,,,0,0,,"WQS-EC",0
+101,"OLRD","Old River at Lammers Rd Drain (SOR20)",,,,,,"South Delta",,,1,,"Boat","DColvin","37.78630000","-121.47720000","","",,,,,0,0,,"WQS-EC",0
+102,"OTBD","Old River upstream of Tracy Blvd Drain (SOR16U)","B9538100",,,,,"South Delta",,,1,,"Boat","DColvin","37.80198200","-121.44283100","","",,,,,0,0,,"WQS-EC",0
+103,"PCCD","Old River at Paradise Cut Confluence Downstream","B9538500",,,,,"South Delta",,,1,,"Boat","DColvin","37.80422900","-121.42022400","","",,,,,0,0,,"WQS-EC",0
+104,"PCCU","Old River at Paradise Cut Confluence Upstream","B9538600",,,,,"South Delta",,,1,,"Boat","DColvin","37.80689200","-121.41468100","","",,,,,0,0,,"WQS-EC",0
+105,"OTWW","Old River downstream of Tracy WW outfall (SOR7)","B9538900",,,,,"South Delta",,,1,,"Boat","DColvin","37.80642200","-121.40864200","","",,,,,0,0,,"WQS-EC",0
+106,"TPP","Tom Paine Slough near Pescadero","B95425",,"B95425",,"B9542500","South Delta",,,0,,"Boat","DColvin","37.76728500","-121.35107100","37.76738889","-121.35108330",,,,,0,0,,,0
+107,"TPPA","Tom Paine Slough at Paradise Ave","B9542400",,,,"B9542400","South Delta",,,1,,"Boat","DColvin","37.77407100","-121.38252200","37.77422500","-121.38229700",,,,,0,0,"Hobo","WQS-HOBO",0
+108,"DAR","Drainage at Arbor Road","B95423",,"B95423",,"B9542300","South Delta",,,0,,"Boat","DColvin","37.76887900","-121.41937500","37.76896000","-121.41941000",,,,,0,0,,,0
+109,"VS","Verification Sonde",,,,,,,,,1,,,,"","","","",,,,"VS",0,0,"X","WQS-Full",0
+110,"OAAD","Old River at Anchored ADCP Downstream","B9537500",,,,,"South Delta",,,1,,"Boat","DColvin","37.78239500","-121.49837400","","",,,,"OAAD",0,0,,"WQS-EC",0
+111,"OAAU","Old River at Anchored ADCP Upstream","B9537600",,,,,"South Delta",,,1,,"Boat","DColvin","37.78582700","-121.48086600","","",,,,"OAAU",0,0,,"WQS-EC",0
+112,"GCMW","Grant Line Canal Mid West","B9529700",,,,,"South Delta",,,1,,"Boat","Dcolvin","37.82024800","-121.52101730","","",,,,"GCMW",0,0,,"WQS-EC",0
+113,"PCNB","Paradise Cut Upstream North Bridge","B9541070",,,,,,,,0,,"Boat","Dcolvin","37.80111422","-121.36749153","","",,,,,0,0,,"WQS-EC",0
+114,"PCSB","Paradise Cut Upstream South Bridge","B9541060",,,,,,,,0,,"Boat","Dcolvin","37.79991312","-121.36908622","","",,,,,0,0,,"WQS-EC",0
