@@ -102,7 +102,7 @@ CDECheck <- function(stations=NULL,parameters="All",range=NULL,duration=4,graphs
       path=paste0('//pcdistfs1/share/Water Quality Evaluation Section/Tools/Rstuff/CDECheck')
       if(!file.exists(path)){
         path=getwd()
-        warning(paste0("Cannot find path: //pcdistfs1/share/Water Quality Evaluation Section/Tools/Rstuff/CDECheck     pdf saved to: ", path))
+        warning(paste0("Cannot find path: //pcdistfs1/share/Water Quality Evaluation Section/Tools/Rstuff/CDECheck     pdf saved to: ", path)) #will this work if not connected to share drive?
         print(paste0("Cannot find path: //pcdistfs1/share/Water Quality Evaluation Section/Tools/Rstuff/CDECheck     pdf saved to: ", path))
       }
 
