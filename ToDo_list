@@ -1,2 +1,4 @@
 Look through code and eliminate all code that is location dependant, so that it can be run be anyone.
  - CDECHeck saves file to the share drive (consider making Initialize function that creates location specifiers)
+
+Simplify MkDate
