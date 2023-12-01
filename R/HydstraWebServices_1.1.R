@@ -43,20 +43,20 @@ if(FALSE){
 #' See available time series data (Traces) for individual sites to download from WDL.
 #' @param hystra_id should be a valid hydstra id (eg B9539000)
 #' @param json if true returns json file. (or, is a list that can be parsed as a json?)
-#' @return either a table/list of avialable traces, or a json of aviable traces
-#' @details use this function to see what traces (time series data) are aviable for a site through WDL
+#' @return either a table/list of available traces, or a json of available traces
+#' @details use this function to see what traces (time series data) are available for a site through WDL
 #' @import httr
 #' @import jsonlite
 #' @export
 
-WDL_SiteTraces<-function(hydstra_id,json=FALSE) {
+WDL_SiteTraces<-function(hydstra_id,json=FALSE,ErrorCheck=FALSE) {
   #use to get list of available traces for site
   #hystra_id: should be a valid hydstra id (eg B9539000)
   #json: if true returns json file. (or, is a list that can be parsed as a json?)
 
   # Define the URL
   url <- paste0('https://wdlhyd.water.ca.gov/hydstra/sites/',hydstra_id,'/traces')
-
+  if(ErrorCheck){print(paste0("url: ",url))}
   # Fetch the content from the URL
   response <- httr::GET(url)
 
@@ -74,12 +74,12 @@ WDL_SiteTraces<-function(hydstra_id,json=FALSE) {
   } else {
     cat("Failed to fetch the data. Status code:", status_code(response), "\n")
   }
-
+  print("Test: all done")
 }
 
 #' Download data from WDL using web services
 #'
-#' Download time series data (Traces) for individual site over specied range from WDL.
+#' Download time series data (Traces) for individual site over specified range from WDL.
 #' @param hystra_id should be a valid hydstra id (eg B9539000)
 #' @param param hydstra web service param name as character (or enter a Trace)
 #' @param range two variable vector for start and end date. Enter as character with format YYYYMMDDHHMM (can be entered as returned from MkDate)
@@ -93,7 +93,7 @@ WDL_SiteTraces<-function(hydstra_id,json=FALSE) {
 #' @import jsonlite
 #' @export
 
-WDL_SiteTraceData<-function(hydstra_id,param="",range=NULL,json=FALSE,Trace=NULL,type="RAW"){
+WDL_SiteTraceData<-function(hydstra_id,param="",range=NULL,json=FALSE,Trace=NULL,type="RAW",ErrorCheck=FALSE){
   #hystra_id: should be a valid hydstra id (eg B9539000)
   #param: hydstra web service param name as character (or enter a Trace)
   #range: two variable vector for start and end date. Enter as character with format YYYYMMDDHHMM
@@ -111,12 +111,13 @@ WDL_SiteTraceData<-function(hydstra_id,param="",range=NULL,json=FALSE,Trace=NULL
   # Define the URL
   #example      'https://wdlhyd.water.ca.gov/hydstra/sites/B9539000/traces/WaterTemp.RAW/points?start-time=202201010000&end-time=202202010000'
   url <- paste0('https://wdlhyd.water.ca.gov/hydstra/sites/',hydstra_id,'/traces/',Trace,'/points?start-time=',range[1],'&end-time=',range[2])
+  if(ErrorCheck){print(url)}
 
   # Fetch the content from the URL
   response <- httr::GET(url)
 
   # Check if the request was successful
-  if (status_code(response) == 200) {
+  if (httr::status_code(response) == 200) {
     # Parse the content
     data <- jsonlite::fromJSON(httr::content(response, as="text",encoding="UTF-8"))
 
@@ -124,11 +125,12 @@ WDL_SiteTraceData<-function(hydstra_id,param="",range=NULL,json=FALSE,Trace=NULL
     if(json){
         return(data)
       } else{
-        return(data$return$traces$trace)
+        return(data$return$traces$trace[[1]]) #presumably there could be more elements to the $trace, thus the need for [[1]]
       }
   } else {
     cat("Failed to fetch the data. Status code:", status_code(response), "\n")
   }
+  print("Test: all done")
 }
 
 #Dylan code as another example of using web services

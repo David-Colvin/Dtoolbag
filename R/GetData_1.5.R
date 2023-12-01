@@ -1,7 +1,8 @@
-# 1.2 changing so no defualt parameters
+# Version and Update Notes -----------------------------------------------------------------------------------
+# 1.2 changing so no default parameters
 # 1.4 updating to (hopefully) work with new WDL website
 #     edited source=USGS to convert DateTime using MkDate and to not attempt downloading of missing USGS station numbers
-# 1.4.1 adding change of hydtra station code for downloading stage data from WDL
+# 1.4.1 adding change of hydstra station code for downloading stage data from WDL
 #     Error? noticed that when entering range=range when calling function range (external to function) gets converted to the downloaded data? weird
 # 1.4.2 Error checking and improving (noticed issue of returning a zero data.table when there should be some data)
 # 1.5 rewriting WDL to work with new hystra web services (now gets downloaded as a json)
@@ -61,43 +62,43 @@ GetData=function(stations,parameters,range=NULL,source="WDL",duration=NULL,
   #set tbl_ referances
   tbl <- WQES_tbls()
 
-  #WDL
-  if(source=="WDL"){  #because each source has different requirements and is set up in defferent ways
-    print("WDL website underconstruction, if error try source = 'CDEC'")
+  # WDL ---------------------------------------
+  if(source=="WDL"){  #because each source has different requirements and is set up in different ways
+    print("WDL website now using hydstra web services. Visit: https://wdlhyd.water.ca.gov/")
     if(is.null(dtGet)){
-      #default range is  a year minus current date to current date
+      #default range is  10/1/ (previous year) to current date
       if(is.null(range)){
         if(POR){Years="POR"
-                print("WArniung! not working!")
+                print("WArning! not working!")
         }else {
           if(length(range)==1){
             range[2]=Sys.Date()
-          }else {range<-c(Sys.time()-31536000,Sys.time())}
+          }else {
+            #                                                                             testing because it switches to PDT
+            range<-MkDate(c(paste0(as.character(as.numeric(format(Sys.time(),"%Y"))-1),"10010000"),paste0(as.character(format(Sys.time(),"%Y%m%d")),"0000")))
+          }
         }
       }
-      #Specify Parameters
+      # Specify Parameters
       if(parameters[1]=="All"){
-        print("Warning: parameters=All will take awhile")
-        tbl$Parameters[WQESPrimary==TRUE|Parameter=="Flow_CFS",]$ParamR->parameters}
+        print("Warning: parameters=All will take awhile") #probably should use the WDL_SiteTraces function...
 
-      if(ErrorCheck){print(c("ErrorCheck:",parameters,stations,Years))}
+          parameters<-tbl$Parameters[!WDL_Param==""|Parameter=="Flow_CFS",]$ParamR
 
-      #Sets all files to download (every unique station, parameter, year combo)
-
-      if(FALSE){
-      if(!Years[1]=="POR"){
-        dtGet=data.table(
-          ParamR = rep(parameters,times=length(stations)*(Years[2]-Years[1]+1)),
-          StationCode = rep(stations,each=length(parameters)*(Years[2]-Years[1]+1)),
-          Year=rep(Years[1]:Years[2],each=length(parameters),times=length(stations)))
-      }else {
-        dtGet=data.table(
-          ParamR = rep(parameters,times=length(stations)*(1)),
-          StationCode = rep(stations,each=length(parameters)*(1)),
-          Year=rep("POR",each=length(parameters),times=length(stations)))
       }
-      }#old WDL
 
+      if(ErrorCheck){print(c("ErrorCheck:",parameters," Stations: ",stations))}
+
+      #Sets all files to download (every unique station, parameter combo)
+      dtGet=data.table(
+        ParamR = rep(parameters,times=length(stations)*(1)),
+        StationCode = rep(stations,each=length(parameters)*(1))
+      )
+
+      #Specify Parameter names for WDL hystra web services (ie, traces)
+      data.table::setkey(tbl$Parameters,ParamR)
+      data.table::setkey(dtGet,ParamR)
+      dtGet[,WDL_Param:=tbl$Parameters[dtGet]$WDL_Param]
 
       if(ErrorCheck){View(dtGet)}
 
@@ -111,7 +112,7 @@ GetData=function(stations,parameters,range=NULL,source="WDL",duration=NULL,
 
       dtGet[ID_Hydstra=="",ID_Hydstra:=NA]
 
-      #correct for entering in Hydstra codes instead of StationCodes
+      #correct for entering in Hydstra codes instead of StationCodes (probably needs some clean up)
       dtGet[is.na(ID_Hydstra)&stringr::str_detect(StationCode,"^[BG]{1}[0-9]{5,7}"),ID_Hydstra:=StationCode]
 
       #Another way in case using obscure hydstra codes
@@ -119,16 +120,31 @@ GetData=function(stations,parameters,range=NULL,source="WDL",duration=NULL,
         dtGet[,ID_Hydstra:=stations]
       }
 
-    } #bc I may want to enter my own dtGet at somepoint
+      #add range
+      dtGet[,Start:=range[1]]
+      dtGet[,End:=range[2]]
+
+      dtGet[,Status:="Pending"]
 
 
+
+    } #bc I may want to enter my own dtGet at some point
+
+    # Downloading-----------------------------------------------------------------------------------------------------
     print(paste0("Downloading files ( ",length(dtGet$ParamR), " )" ) )
-    for(i in 1:length(dtGet$ParamR)){ #download all Variables station combos for (inside the loop for each year)
+
+    ldt<-list()
+    print(paste0("Downloading: ",length(dtGet$ParamR)))
+    for(i in 1:length(dtGet$ParamR)){ #download all Variables station combos
       cat(paste0(i," "))
-      dtGet[i,File:= WDL_downlo_v3(dtGet[i]$ID_Hydstra,dtGet[i]$ParamR,dtGet[i]$Year,replace=replace,ErrorCheck=ErrorCheck)]
-    }#ends Variable Station combo loop
+      #dtGet[i,File:= WDL_downlo_v3(dtGet[i]$ID_Hydstra,dtGet[i]$ParamR,dtGet[i]$Year,replace=replace,ErrorCheck=ErrorCheck)]
+      ldt[[i]]<-WDL_SiteTraceData(hydstra_id=dtGet[i]$ID_Hydstra, param=dtGet[i]$WDL_Param, range=MkDate(c(dtGet[i]$Start,dtGet[i]$End),ErrorCheck=ErrorCheck),type="RAW",ErrorCheck=ErrorCheck)
+      dtGet[i,Status:="Downloaded"]
+
+    } #download all Variables station combos
     print("")
-    if(ErrorCheck){print("Past WDL_downlo_v3")}
+    if(ErrorCheck){print("Done downloading")}
+    if(FALSE){ldt_save <- ldt}
 
     #initialize DT as first non error ldt
     #    suppressWarnings(Dread(dtGet[!str_detect(File,"Error")]$File[1],quality=TRUE,time15min=time15min))->DT
@@ -136,48 +152,58 @@ GetData=function(stations,parameters,range=NULL,source="WDL",duration=NULL,
     #    DT[,Station:=dtGet[!str_detect(File,"Error")]$StationCode[1]]
     #    DT[,Parameter:=dtGet[!str_detect(File,"Error")]$ParamR[1]]
     #    setkey(DT)
-    DT=NULL
-    #combine all files into DT
+
+
+
+    # combine all files into DT------------------------------------------------
+
     print(paste0("Compiling files ( ",length(dtGet$ParamR), " )" ) )
     for(i in 1:length(dtGet$ParamR)){
       cat(paste0(i," "))
-      if(!stringr::str_detect(dtGet[i]$File,"Error")){
-        suppressWarnings(Dread(dtGet[i]$File,quality=TRUE))->DT2
-        names(DT2)[c(2,3)]<-c("value","Quality")
-        DT2[,Station:=dtGet[i]$StationCode]
-        DT2[,Parameter:=dtGet[i]$ParamR]
-        data.table::setkey(DT2)
-        if(is.null(DT)){
-          DT<-DT2
-        }else {DT<-merge(DT,DT2,all=TRUE)} #merge not part of data.table?
-        rm(DT2)
-      }else {print(paste("No file: ",dtGet[i]$Station," ",dtGet[i]$ParamR, " ", dtGet[i]$Year ))}
+
+      if(length(ldt[[i]])>0){ #if the list is NULL length(ldt[[i]]) should be 0, if empty should be 1
+        ldt[[i]]<-data.table::data.table(ldt[[i]])
+        names(ldt[[i]])<-c("DateTime","value","QC","d")
+        ldt[[i]][,DateTime:=MkDate(DateTime)]
+        ldt[[i]][,Station:=dtGet[i]$StationCode]
+        ldt[[i]][,Parameter:=dtGet[i]$ParamR]
+        ldt[[i]][,Source:="WDL"]
+        ldt[[i]]<-ldt[[i]][,.(DateTime,Station,Parameter,value,QC,d,Source)]
+        dtGet[i,Status:="Proccessed"]
+      }else {dtGet[i,Status:="No data"]}
     }
+
+
     print("")
 
-    if(!is.null(range)){#reduce to just the initial range if available
-      if(all(class(range)==class(DT[,1][[1]]))){
-        DT[DateTime>=range[1]&DateTime<=range[2]]->DT}
-    }
+    #combine list of datatables
+    #remove NULL elements of list
+    #ldt <- ldt[!sapply(ldt, is.null)]
+    #ldt <- ldt[!sapply(ldt,is.list)]
+
+    # Logical condition to identify non-empty, non-NULL elements
+    condition <- !(sapply(ldt, is.null) | (sapply(ldt, is.list) & sapply(ldt, length) == 0))
+
+    # Apply the condition
+    ldt <- ldt[condition]
+
+
+
+    DT=NULL
+    DT<-Dmerge(ldt)
+
+
     if(report|ErrorCheck){View(dtGet)}
-    if(ErrorCheck){print(paste0("Setting source...class(DT): ",class(DT)))}
 
-    if(!is.null(DT)){
-      DT[,Source:="WDL"]
-      if(TRUE){DT[!Quality%in%c(151,255)]->DT}#because 151(missing) will appear just before next real value, and causes duplicate time stamps 255 randomly occures in the middle
-      if(names(DT)[1]=="DateTime"){DT <- DT[,.(DateTime,Station,Parameter,value,Quality,Source)] }
-      if(names(DT)[1]=="Date"){DT <- DT[,.(Date,Station,Parameter,value,Quality,Source)] }
 
-       return(DT[])
-    }else {
-      print("No Data!")
-      return(NULL)
+      return(DT[])
+
       if(ErrorCheck){print("Completed GetData")}
-    }
+
   }#ends WDL source
 
 
-  #CDEC
+  #CDEC ----------------------------------------------------------
   if(source=="CDEC"){
     if(ErrorCheck) { print("source: CDEC")}
     #if no range entered, default is current time and 5 days previous
@@ -257,7 +283,7 @@ GetData=function(stations,parameters,range=NULL,source="WDL",duration=NULL,
     return(DT[])
   }#ends CDEC section
 
-  #USGS
+  #USGS -------------------------------------------------------------------------------------------------
   if(source=="USGS"){
 
     if(is.null(dtGet)){

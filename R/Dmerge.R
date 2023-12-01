@@ -19,6 +19,7 @@ Dmerge <- function(ldt,dt2=NULL){
 
   ldt <- lapply( ldt, data.table::setkey) # set keys for each data.table in the list
 
-  return( Reduce( function(...) merge(..., all = TRUE), ldt))
 
+  #DC20231130 return( Reduce( function(...) merge(..., all = TRUE), ldt))
+  return( data.table::as.data.table(Reduce( function(...) merge(..., all = TRUE), ldt)))#DC20231130
 }

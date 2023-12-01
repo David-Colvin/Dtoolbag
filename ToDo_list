@@ -2,3 +2,10 @@ Look through code and eliminate all code that is location dependant, so that it 
  - CDECHeck saves file to the share drive (consider making Initialize function that creates location specifiers)
 
 Simplify MkDate
+
+Error list
+ -This code returns one PDT and one PST
+   MkDate(c(paste0(as.character(as.numeric(format(Sys.time(),"%Y"))-1),"10010000"),paste0(as.character(format(Sys.time(),"%Y%m%d")),"0000")))
+
+
+-Dmerge returns a data.frame not a data.table?

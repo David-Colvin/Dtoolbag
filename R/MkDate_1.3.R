@@ -1,6 +1,7 @@
 #1.3 Github'ing
 #1.2 updating to avoid the UTC trap. if time is already POSIXct UTC, add 8 hours
 # 20220310 Changed Quiet to ErrorCheck
+# 20231201 more lines for ErrorCheck
 
 #' Convert common timstamps to POSIXct
 #'
@@ -38,6 +39,8 @@ MkDate=function(DateTime,asDate=FALSE,time15min=FALSE,sequence=FALSE,BY="15 min"
 
   DateTime1=DateTime[!is.na(DateTime)] #to make sure I check stuff with the first non NA DateTime
   DateTime1=DateTime1[!stringr::str_detect(DateTime1,"^(?![\\s\\S])")][1] #then make sure the first value isn't ""
+
+  if(ErrorCheck){print(paste0(c("MkDate - DateTime1: ",DateTime1)))}
 
   #convert numeric to character
   if(class(DateTime)[1] == "numeric") {
