@@ -1,4 +1,30 @@
 "PK_Stations","StationCode","StationName","ID_HydstraWQ","ID_HydstraFlow","ID_HydstraSurface","ID_USGS","ID_FLIMS","Region","Group","SubGroup","WQESmanaged","RunName","Access","LeadStaff","Latitude_WGS84_f","Longitude_WGS84_f","Latitude_NAD83_f","Longitude_NAD83_f","MapNum","PlotOrder","FundingSource","WQESCode","Terminated","Telemetry","SondeSeries","Logger_Variant","SeasonalStation"
+89,"MDM","Middle River at Middle River",,,,"11312676",,"South Delta",,,0,,,,"","","","",,,,,0,0,,,0
+90,"OH4","Old River at Highway 4",,,,"11313315",,"South Delta",,,0,,,,"","","","",,,,,0,0,,,0
+91,"RVB","Sacramento River at Rio Vista Bridge",,,,,,"North Delta",,,0,,,,"","","","",,,,,0,0,,,0
+92,"RYF","Cache Slough above Ryer Island Ferry",,,,"11455385",,"North Delta",,,0,,,,"","","","",,,,,0,0,,,0
+93,"LIB","Liberty Island at Approx Cntr S End",,,,"11455315",,"Yolo Bypass",,,0,,,,"","","","",,,,,0,0,,,0
+95,"DSJ","Dutch Slough at Jersey Island",,,,"11313433",,"South Delta",,,0,,,,"","","","",,,,,0,0,,,0
+96,"SUS","Steam Boat Slough below Sutter Slough","B91479",,,,,"North Delta",,,0,,,,"","","","",,,,,0,0,,,0
+97,"MHCM","Mountain House Creek (SOR31)","B9536900",,,,,"South Delta",,,1,,"Boat","DColvin","37.79691800","-121.52564200","","",,,,,0,0,"Hobo","WQS-EC",0
+98,"WCNM","Wicklund Cut near Mouth (SOR28)","B9537100",,,,,"South Delta",,,1,,"Boat","DColvin","37.78972600","-121.51624400","","",,,,,0,0,,"WQS-EC",0
+99,"WCBR","Wicklund Cut at Bethany Rd Bridge","B9537200",,,,,"South Delta",,,1,,"Boat","DColvin","37.78038600","-121.51732078","","",,,,,0,0,,"WQS-EC",0
+100,"OBRD","Old River at Bethany Rd Drain (SOR24)","B9537400",,,,,"South Delta",,,1,,"Boat","DColvin","37.78530000","-121.50460000","","",,,,,0,0,,"WQS-EC",0
+101,"OLRD","Old River at Lammers Rd Drain (SOR20)",,,,,,"South Delta",,,1,,"Boat","DColvin","37.78630000","-121.47720000","","",,,,,0,0,,"WQS-EC",0
+102,"OTBD","Old River upstream of Tracy Blvd Drain (SOR16U)","B9538100",,,,,"South Delta",,,1,,"Boat","DColvin","37.80198200","-121.44283100","","",,,,,0,0,,"WQS-EC",0
+103,"PCCD","Old River at Paradise Cut Confluence Downstream","B9538500",,,,,"South Delta",,,1,,"Boat","DColvin","37.80422900","-121.42022400","","",,,,,0,0,,"WQS-EC",0
+104,"PCCU","Old River at Paradise Cut Confluence Upstream","B9538600",,,,,"South Delta",,,1,,"Boat","DColvin","37.80689200","-121.41468100","","",,,,,0,0,,"WQS-EC",0
+105,"OTWW","Old River downstream of Tracy WW outfall (SOR7)","B9538900",,,,,"South Delta",,,1,,"Boat","DColvin","37.80642200","-121.40864200","","",,,,,0,0,,"WQS-EC",0
+106,"TPP","Tom Paine Slough near Pescadero","B95425",,"B95425",,"B9542500","South Delta",,,0,,"Boat","DColvin","37.76728500","-121.35107100","37.76738889","-121.35108330",,,,,0,0,,,0
+107,"TPPA","Tom Paine Slough at Paradise Ave","B9542400",,,,"B9542400","South Delta",,,1,,"Boat","DColvin","37.77407100","-121.38252200","37.77422500","-121.38229700",,,,,0,0,"Hobo","WQS-HOBO",0
+108,"DAR","Drainage at Arbor Road","B95423",,"B95423",,"B9542300","South Delta",,,0,,"Boat","DColvin","37.76887900","-121.41937500","37.76896000","-121.41941000",,,,,0,0,,,0
+109,"VS","Verification Sonde",,,,,,,,,1,,,,"","","","",,,,"VS",0,0,"X","WQS-Full",0
+110,"OAAD","Old River at Anchored ADCP Downstream","B9537500",,,,,"South Delta",,,1,,"Boat","DColvin","37.78239500","-121.49837400","","",,,,"OAAD",0,0,,"WQS-EC",0
+111,"OAAU","Old River at Anchored ADCP Upstream","B9537600",,,,,"South Delta",,,1,,"Boat","DColvin","37.78582700","-121.48086600","","",,,,"OAAU",0,0,,"WQS-EC",0
+112,"GCMW","Grant Line Canal Mid West","B9529700",,,,,"South Delta",,,1,,"Boat","Dcolvin","37.82024800","-121.52101730","","",,,,"GCMW",0,0,,"WQS-EC",0
+113,"PCNB","Paradise Cut Upstream North Bridge","B9541070",,,,,,,,0,,"Boat","Dcolvin","37.80111422","-121.36749153","","",,,,,0,0,,"WQS-EC",0
+114,"PCSB","Paradise Cut Upstream South Bridge","B9541060",,,,,,,,0,,"Boat","Dcolvin","37.79991312","-121.36908622","","",,,,,0,0,,"WQS-EC",0
+117,"R22W","Toe Drain at Rd. 22 West","A0D84061387",,,,,"Yolo Bypass",,,1,,"Land","Ehuynh","38.67638500","-121.64431500","","",,,,,0,0,"X","WQES_Full_w_BGA_fDOM",0
 78,"SUR","Sugar Cut",,,,,,"South Delta",,"5",0,,,,"37.78847000","-121.41933300","","",,,,,0,0,,,0
 79,"TPS","Tom Paine Slough abv The Mouth",,"B95420",,,,"South Delta",,"5",0,,,,"37.79053497","-121.41863251","","",,,,,0,0,,,0
 80,"HBP","Harvey O Banks Pumping Plant",,,,,,"South Delta",,,0,,,,"37.80194400","-121.62027800","","",,,,,0,0,,,0
@@ -74,7 +100,7 @@
 69,"RMB","Rominger Bridge at Colusa Basin Drain","A0C85051515",,,,,"Yolo Bypass",,,1,,"Land","AMaguire","","","","",,,,,0,0,"X","WQS-Full",1
 70,"LIS","Yolo Bypass near Lisbon Weir","B9156000",,,,"B9D82851352","Yolo Bypass",,,1,,,"AMaguire","","","","",,,,,0,0,"X","WQS-Full",0
 71,"STTD","Toe Drain at Screw Trap","A0D82120386",,,,,"Yolo Bypass",,,1,,,"AMaguire","","","","",,,,,0,0,"X","WQS-Full",0
-73,"RD22","Toe Drain at Rd. 22","A0D84061386",,,,,"Yolo Bypass",,,1,,,"AMaguire","","","","",,,,,0,0,"X","WQS-Full",0
+73,"RD22","Toe Drain at Rd. 22","A0D84061386",,,,,"Yolo Bypass",,,1,,,"AMaguire","","","","",,,,,0,0,"X","WQES_Full_w_BGA_fDOM",0
 74,"I80","Toe Drain at I80","A0D83441350",,,,,"Yolo Bypass",,,1,,,"AMaguire","","","","",,,,,0,0,"X","WQS-Full",0
 75,"RCS","Ridge Cut Slough","A0D84761435",,,,,"Yolo Bypass",,,1,,,"AMaguire","","","","",,,,,0,0,,"WQS-Full",0
 76,"CCI","Clifton Court Intake",,,,,,"South Delta",,,0,,,,"","","","",,,,,0,0,,,0
@@ -83,28 +109,3 @@
 85,"GLAB","Grant Line Canal above Barrier",,,"B95310",,,"South Delta",,,0,,,,"","","","",,,,,0,0,,,0
 87,"BL5","Below Base of Toe Drain in Prospect Slough",,,,,"B9D81651399","Prospect Slough",,,1,,"Boat","Ldavis","38.27446000","-121.66565200","","",,,,"Bl5",0,0,"X","WQES_Full_w_BGA_fDOM",1
 88,"SJJ","San Joaquin River at Jersey Point",,,,"11337190",,"Central Delta",,,0,,,,"","","","",,,,,0,0,,,0
-89,"MDM","Middle River at Middle River",,,,"11312676",,"South Delta",,,0,,,,"","","","",,,,,0,0,,,0
-90,"OH4","Old River at Highway 4",,,,"11313315",,"South Delta",,,0,,,,"","","","",,,,,0,0,,,0
-91,"RVB","Sacramento River at Rio Vista Bridge",,,,,,"North Delta",,,0,,,,"","","","",,,,,0,0,,,0
-92,"RYF","Cache Slough above Ryer Island Ferry",,,,"11455385",,"North Delta",,,0,,,,"","","","",,,,,0,0,,,0
-93,"LIB","Liberty Island at Approx Cntr S End",,,,"11455315",,"Yolo Bypass",,,0,,,,"","","","",,,,,0,0,,,0
-95,"DSJ","Dutch Slough at Jersey Island",,,,"11313433",,"South Delta",,,0,,,,"","","","",,,,,0,0,,,0
-96,"SUS","Steam Boat Slough below Sutter Slough","B91479",,,,,"North Delta",,,0,,,,"","","","",,,,,0,0,,,0
-97,"MHCM","Mountain House Creek (SOR31)","B9536900",,,,,"South Delta",,,1,,"Boat","DColvin","37.79691800","-121.52564200","","",,,,,0,0,"Hobo","WQS-EC",0
-98,"WCNM","Wicklund Cut near Mouth (SOR28)","B9537100",,,,,"South Delta",,,1,,"Boat","DColvin","37.78972600","-121.51624400","","",,,,,0,0,,"WQS-EC",0
-99,"WCBR","Wicklund Cut at Bethany Rd Bridge","B9537200",,,,,"South Delta",,,1,,"Boat","DColvin","37.78038600","-121.51732078","","",,,,,0,0,,"WQS-EC",0
-100,"OBRD","Old River at Bethany Rd Drain (SOR24)","B9537400",,,,,"South Delta",,,1,,"Boat","DColvin","37.78530000","-121.50460000","","",,,,,0,0,,"WQS-EC",0
-101,"OLRD","Old River at Lammers Rd Drain (SOR20)",,,,,,"South Delta",,,1,,"Boat","DColvin","37.78630000","-121.47720000","","",,,,,0,0,,"WQS-EC",0
-102,"OTBD","Old River upstream of Tracy Blvd Drain (SOR16U)","B9538100",,,,,"South Delta",,,1,,"Boat","DColvin","37.80198200","-121.44283100","","",,,,,0,0,,"WQS-EC",0
-103,"PCCD","Old River at Paradise Cut Confluence Downstream","B9538500",,,,,"South Delta",,,1,,"Boat","DColvin","37.80422900","-121.42022400","","",,,,,0,0,,"WQS-EC",0
-104,"PCCU","Old River at Paradise Cut Confluence Upstream","B9538600",,,,,"South Delta",,,1,,"Boat","DColvin","37.80689200","-121.41468100","","",,,,,0,0,,"WQS-EC",0
-105,"OTWW","Old River downstream of Tracy WW outfall (SOR7)","B9538900",,,,,"South Delta",,,1,,"Boat","DColvin","37.80642200","-121.40864200","","",,,,,0,0,,"WQS-EC",0
-106,"TPP","Tom Paine Slough near Pescadero","B95425",,"B95425",,"B9542500","South Delta",,,0,,"Boat","DColvin","37.76728500","-121.35107100","37.76738889","-121.35108330",,,,,0,0,,,0
-107,"TPPA","Tom Paine Slough at Paradise Ave","B9542400",,,,"B9542400","South Delta",,,1,,"Boat","DColvin","37.77407100","-121.38252200","37.77422500","-121.38229700",,,,,0,0,"Hobo","WQS-HOBO",0
-108,"DAR","Drainage at Arbor Road","B95423",,"B95423",,"B9542300","South Delta",,,0,,"Boat","DColvin","37.76887900","-121.41937500","37.76896000","-121.41941000",,,,,0,0,,,0
-109,"VS","Verification Sonde",,,,,,,,,1,,,,"","","","",,,,"VS",0,0,"X","WQS-Full",0
-110,"OAAD","Old River at Anchored ADCP Downstream","B9537500",,,,,"South Delta",,,1,,"Boat","DColvin","37.78239500","-121.49837400","","",,,,"OAAD",0,0,,"WQS-EC",0
-111,"OAAU","Old River at Anchored ADCP Upstream","B9537600",,,,,"South Delta",,,1,,"Boat","DColvin","37.78582700","-121.48086600","","",,,,"OAAU",0,0,,"WQS-EC",0
-112,"GCMW","Grant Line Canal Mid West","B9529700",,,,,"South Delta",,,1,,"Boat","Dcolvin","37.82024800","-121.52101730","","",,,,"GCMW",0,0,,"WQS-EC",0
-113,"PCNB","Paradise Cut Upstream North Bridge","B9541070",,,,,,,,0,,"Boat","Dcolvin","37.80111422","-121.36749153","","",,,,,0,0,,"WQS-EC",0
-114,"PCSB","Paradise Cut Upstream South Bridge","B9541060",,,,,,,,0,,"Boat","Dcolvin","37.79991312","-121.36908622","","",,,,,0,0,,"WQS-EC",0
