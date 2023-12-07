@@ -25,7 +25,7 @@
 25,"Stage","Stage","Ft","Stage (ft)","Stage",,,,,"STAGE_15-MINUTE_DATA","233","1","00065",,,0,99,"Ht",0,"StreamLevel"
 27,"FlowFAL","Flow","CFS","Flow (cfs)",,,,,,,,"14521",,,,0,99,"FlowFAL",0,
 28,"Velocity","Velocity","FPS","Velocity (fps)","Velocity",,,,,"VELOCITY","621","27941",,,,0,99,"Vel",0,"Velocity"
-29,"Flow_CFS","Flow","CFS","Flow (cfs)","Flow",,,,,"FLOW_15-MINUTE_DATA","262","20","00060",,,0,90,"Flow",0,"Flow"
+29,"Flow_CFS","Flow","CFS","Flow (cfs)","Flow",,,,,"FLOW_15-MINUTE_DATA","262","20","00060",,,0,90,"Flow",0,"StreamFlow"
 30,"Salinity_ppt","Salinity","ppt","Salinity (ppt)","Sal","Sal",,"Sal ppt",,"PRACTICAL_SALINITY_PSS-15_POINT","806",,,"Temp/EC",20,1,5,"Sal",0,"Salinity"
 31,"fDOM_QSU",,"QSU",,"fDom",,,"fDOM QSU",,,"3081",,,"fDOM",32,1,16,"fDOM",0,
 32,"fDOM_RFU",,"RFU",,"fDomR",,,"fDOM RFU",,,,,,"fDOM",,1,15,"fDOM_",0,
