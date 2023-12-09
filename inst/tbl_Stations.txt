@@ -25,8 +25,11 @@
 113,"PCNB","Paradise Cut Upstream North Bridge","B9541070",,,,,,,,0,,"Boat","Dcolvin","37.80111422","-121.36749153","","",,,,,0,0,,"WQS-EC",0
 114,"PCSB","Paradise Cut Upstream South Bridge","B9541060",,,,,,,,0,,"Boat","Dcolvin","37.79991312","-121.36908622","","",,,,,0,0,,"WQS-EC",0
 117,"R22W","Toe Drain at Rd. 22 West","A0D84061387",,,,,"Yolo Bypass",,,1,,"Land","Ehuynh","38.67638500","-121.64431500","","",,,,,0,0,"X","WQES_Full_w_BGA_fDOM",0
-78,"SUR","Sugar Cut",,,,,,"South Delta",,"5",0,,,,"37.78847000","-121.41933300","","",,,,,0,0,,,0
-79,"TPS","Tom Paine Slough abv The Mouth",,"B95420",,,,"South Delta",,"5",0,,,,"37.79053497","-121.41863251","","",,,,,0,0,,,0
+118,"SJVI","San Joaquin River at D.V.I. Pump","B95880",,"B95880",,,,,,0,,,,"37.75002800","-121.30288900","","",,,,,0,0,,,0
+119,"SJPD","San Joaquin River below Paradise Dam","B95850",,"B95850",,,,,,0,,,,"37.76055600","-121.30927800","","",,,,,0,0,,,0
+120,"SJL","San Joaquin River below Old River near Lathrop","B95765",,"B95765",,,,,,0,,,,"37.81099190","-121.32399400","","",,,,,0,0,,,0
+78,"SUR","Sugar Cut","B95422",,"B95422",,,"South Delta",,"5",0,,,,"37.78847000","-121.41933300","","",,,,,0,0,,,0
+79,"TPS","Tom Paine Slough abv The Mouth","B95420","B95420","B95420",,,"South Delta",,"5",0,,,,"37.79053497","-121.41863251","","",,,,,0,0,,,0
 80,"HBP","Harvey O Banks Pumping Plant",,,,,,"South Delta",,,0,,,,"37.80194400","-121.62027800","","",,,,,0,0,,,0
 81,"SJR","San Joaquin River McCune Station Nr Vernalis",,,,,,"South Delta",,,0,,,,"37.67929000","-121.26511000","","",,,,,0,0,,,0
 82,"VNS","San Joaquin River Near Vernalis",,,,"11303500",,"South Delta",,,0,,,,"","","","",,,,,0,0,,,0
@@ -57,15 +60,15 @@
 24,"SJD","San Joaquin River at Dos Reis Park","B9576000","B95760",,,,"South Delta",,"1",1,,"Boat","DColvin","37.82233120","-121.31772440","37.82232610","-121.31771140",24,36,"O&M","SJD",0,1,"6","WQS-EC",0
 25,"VCU","Victoria Canal","B9528500",,,"11312672","B9D75231318","South Delta",,"2",1,,"Boat","TSalman","37.87094400","-121.53000000","37.87093890","-121.52998690",25,20,"O&M/BDO","VCU",0,1,"X","WQS-Full",0
 26,"GLC","Grant Line Canal near Clifton Court Forebay","B9529500",,,,"B9D72921327","South Delta",,"6",1,,"Boat","TSalman","37.82012800","-121.54466100","37.82012290","-121.54466100",26,26,"BDO","GLC",0,1,"X","WQS-Full",0
-27,"GCT","Grant Line Canal at Tracy Blvd","B9530000",,,,"B9D74921269","South Delta",,"1",1,,"Boat","TSalman","37.82011100","-121.44983300","37.82010590","-121.44981990",27,,"BDO","GCT",0,0,"X",,0
+27,"GCT","Grant Line Canal at Tracy Blvd","B9530000",,"B95300",,"B9D74921269","South Delta",,"1",1,,"Boat","TSalman","37.82011100","-121.44983300","37.82010590","-121.44981990",27,,"BDO","GCT",0,0,"X",,0
 28,"GLE","Grant Line Canal East ","B9532000","B95320",,,"B9D74921261","South Delta",,"1",1,,"Boat","DColvin","37.82025000","-121.43486100","37.82024490","-121.43484790",28,30,"BDO","GLE",0,1,"X","WQS-Full",0
 29,"DGL","Doughty Cut above GLC","B9532500","B95325",,,"B9D74911256","South Delta",,"4",1,,"Boat","DColvin","37.81472200","-121.42522200","37.81471690","-121.42520890",29,,"BDO","DGL",1,0,,,0
-30,"MUP","Middle River at Union Point","B9550000",,"B95500",,"B9D75351292","South Delta",,"2",1,,"Land","TSalman","37.89077800","-121.48836100","37.89077290","-121.48834790",30,,"BDO","MUP",0,0,"X",,0
+30,"MUP","Middle River at Union Point","B9550000","B9550000","B95500",,"B9D75351292","South Delta",,"2",1,,"Land","TSalman","37.89077800","-121.48836100","37.89077290","-121.48834790",30,,"BDO","MUP",0,0,"X",,0
 31,"MRX","Middle River near Tracy Blvd","B9550600",,,,"B9D75291280","South Delta",,"2",1,,"Land","TSalman","37.88142500","-121.46739900","37.88141990","-121.46738590",31,21,"BDO","MRX",0,1,"X","WQS-Full",0
 32,"MHO","Middle River at Howard Road","B9553100",,,,"B9D75261230","South Delta",,"2",1,,"Land","TSalman","37.87618400","-121.38328800","37.87617890","-121.38327490",32,22,"BDO","MHO",0,1,"X","WQS-Full",0
 33,"MRU","Middle River at Undine Road","B9554100","B95541",,,"B9D75011230","South Delta",,"2",1,,"Land","TSalman","37.83394080","-121.38575610","37.83393570","-121.38574300",33,23,"BDO","MRU",0,1,"X","WQS-Full",0
-34,"ODM","Old River below DMC barrier","B9536500","B95365",,,"B9536500","South Delta",,"6",1,,"Boat","TSalman","37.81097200","-121.54441700","37.81096690","-121.54440390",34,27,"BDO","ODM",0,1,"X","WQS-Full",0
-35,"OAD","Old River above DMC barrier","B9536600",,,,"B9536600","South Delta",,"3",1,,"Land","DColvin","37.81025000","-121.54219400","37.81024490","-121.54218090",35,,"BDO","OAD",1,0,"6",,0
+34,"ODM","Old River below DMC barrier","B9536500","B95365","B95365",,"B9536500","South Delta",,"6",1,,"Boat","TSalman","37.81097200","-121.54441700","37.81096690","-121.54440390",34,27,"BDO","ODM",0,1,"X","WQS-Full",0
+35,"OAD","Old River above DMC barrier","B9536600",,"B95366",,"B9536600","South Delta",,"3",1,,"Land","DColvin","37.81025000","-121.54219400","37.81024490","-121.54218090",35,,"BDO","OAD",1,0,"6",,0
 36,"ORM","Old River above Mountain House Creek","B9537000","B95370Q",,,"B9537000","South Delta",,"3",1,,"Boat","TSalman","37.79384080","-121.51738130","37.79383570","-121.51736820",36,28,"O&M","ORM",0,1,"X","WQS-Full",0
 37,"TWA","Old River at TWA","B9537800",,,,"B9D74821274","South Delta",,"3",1,,"Land","BJones","37.80283300","-121.45744400","37.80282790","-121.45743090",37,29,"BDO","TWA",0,1,"6","WQS-Full",0
 38,"OH1","Old River near Head","B9540000","B95400Q","B95400",,"B9D74851200","South Delta",,"1",1,,"Boat","DColvin","37.80759500","-121.33121800","37.80758990","-121.33120500",38,35,"BDO","OH1",0,1,"X","WQS-Full",0
@@ -74,13 +77,13 @@
 41,"TRTT","Truckee River above TTSA","G7151310",,,,"G7151310","Truckee",,,1,,"Land","AMaguire","39.33820000","-120.13326000","39.33819470","-120.13324700",41,,"CalNEVA","TRTT",0,0,"X","WQS-NoChlor",0
 42,"LAB","Little Truckee above Boca","G7216000",,,"10344400","G7216000","Truckee",,,1,,"Land","AMaguire","39.43586500","-120.08453700","39.43585970","-120.08452400",42,,"CalNEVA","LAB",0,0,"X","WQS-NoChlor",0
 43,"FAR","Truckee River at Farad","G7119500",,,"10346000","G7119500","Truckee",,,1,,"Land","AMaguire","39.42768700","-120.03406400","39.42768170","-120.03405100",43,,"CalNEVA","FAR",0,0,"X","WQS-NoChlor",0
-44,"ORI","Old River at Clifton Court Intake","B9534100","B95341",,,"B9D74971332","South Delta",,"6",1,,"Boat","TSalman","37.82800000","-121.55260000","37.82800000","-121.55260000",,25,"DES","ORI",0,0,"6","WQS-Full_NoDepth",0
+44,"ORI","Old River at Clifton Court Intake","B9534100","B95341","B95340",,"B9D74971332","South Delta",,"6",1,,"Boat","TSalman","37.82800000","-121.55260000","37.82800000","-121.55260000",,25,"DES","ORI",0,0,"6","WQS-Full_NoDepth",0
 45,"WCI","West Canal at Clifton Court Intake","B9533800","B95338",,,"B9D74991332","South Delta",,"6",1,,"Boat","TSalman","37.83160510","-121.55401310","37.83160000","-121.55400000",,24,"DES","WCI",0,0,"6","WQS-Full_NoDepth",0
-46,"BDT","San Joaquin R at Brandt Bridge","B95740","B95740Q",,,,"South Delta",,,0,,,,"37.86500000","-121.32310000","","",,,,,0,0,,,0
+46,"BDT","San Joaquin R at Brandt Bridge","B95740","B95740Q","B95740","B95740Q",,"South Delta",,,0,,,,"37.86500000","-121.32310000","","",,,,,0,0,,,0
 47,"MAB","Middle River Above Barrier",,"B95502",,,,"South Delta",,,0,,,,"37.88518143","-121.47276306","","",,,,,0,0,,,0
-48,"MSD","San Joaquin River at Mossdale Bridge","B95820","B95820Q",,,"B9D74721184","South Delta",,,0,,,,"37.78600000","-121.30600000","","",,,,,0,0,,,0
+48,"MSD","San Joaquin River at Mossdale Bridge","B95820","B95820Q","B95820",,"B9D74721184","South Delta",,,0,,,,"37.78600000","-121.30600000","","",,,,,0,0,,,0
 49,"OLD","Old River near Tracy","B95380","B95380Q","B95380",,"B9D74831270","South Delta",,"3",0,,,,"37.80480957","-121.44956207","","",,,,,0,0,,,0
-50,"PCO","Paradise Cut above Old River","B95410",,,,,"South Delta",,,0,,,,"37.80194440","-121.41230600","","",,,,,0,0,,,0
+50,"PCO","Paradise Cut above Old River","B95410",,"B95410",,,"South Delta",,,0,,,,"37.80194440","-121.41230600","","",,,,,0,0,,,0
 51,"TTC","Truckee River at Tahoe City",,,,"10337500","G7166500","Truckee",,,0,,,,"39.16629600","-120.14435900","","",,,,,0,0,,,0
 52,"TRK","Truckee River near Truckee",,,,"10338000","G7160000","Truckee",,,0,,,,"39.29629500","-120.20547500","","",,,,,0,0,,,0
 53,"DNC","Donner Creek at Donner Lake",,,,"10338500",,"Truckee",,,0,,,,"39.32351700","-120.23436500","","",,,,,0,0,"Hobo",,0
