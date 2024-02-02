@@ -194,8 +194,8 @@ add_NAValues <- function( dt,by = 'DateTime'){
     }
 
     #create full date time series
-    range <- c(min(dt$DateTime),max(dt$DateTime))
-    dtNA <- setDT(dt, key= c('DateTime', 'Station','Parameter'))[CJ(DateTime=MkDate(range,time15min=TRUE,sequence=TRUE),
+    range <- c(min(dt$DateTime),max(dt$DateTime))                                               #previous set to TRUE but would cause NA when datetime had a seconds in original dt
+    dtNA <- setDT(dt, key= c('DateTime', 'Station','Parameter'))[CJ(DateTime=MkDate(range,time15min=FALSE,sequence=TRUE),
                                                                 Station=unique(Station),
                                                                 Parameter=unique(Parameter))][]
   }

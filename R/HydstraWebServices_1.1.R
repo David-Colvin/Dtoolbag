@@ -125,7 +125,16 @@ WDL_SiteTraceData<-function(hydstra_id,param="",range=NULL,json=FALSE,Trace=NULL
     if(json){
         return(data)
       } else{
-        return(data$return$traces$trace[[1]]) #presumably there could be more elements to the $trace, thus the need for [[1]]
+
+        if(is.null(data$return$traces$trace[[1]])){
+          if(ErrorCheck){print("null WDL_download")}
+          return("No Data: NULL")
+        }else if(class(data$return$traces$trace[[1]])=="list" ){
+          if(ErrorCheck){print("empty list WDL_download")}
+          return("No Data: empty list")
+        } else {
+          return(data$return$traces$trace[[1]]) #presumably there could be more elements to the $trace, thus the need for [[1]]
+        }
       }
   } else {
     cat("Failed to fetch the data. Status code:", status_code(response), "\n")

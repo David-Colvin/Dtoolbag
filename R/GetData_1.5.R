@@ -125,6 +125,8 @@ GetData=function(stations,parameters,range=NULL,source="WDL",duration=NULL,
       dtGet[,End:=range[2]]
 
       dtGet[,Status:="Pending"]
+      dtGet[,url:=url <- paste0('https://wdlhyd.water.ca.gov/hydstra/sites/',ID_Hydstra,'/traces/',paste0(WDL_Param,".Raw"),'/points?start-time=',Start,'&end-time=',End)
+      ]
 
 
 
@@ -134,12 +136,17 @@ GetData=function(stations,parameters,range=NULL,source="WDL",duration=NULL,
     print(paste0("Downloading files ( ",length(dtGet$ParamR), " )" ) )
 
     ldt<-list()
+    #ldt[[length(dtGet$ParamR)+1]]="End" #bc if last element is NULL, list is resized to last valid element
     print(paste0("Downloading: ",length(dtGet$ParamR)))
     for(i in 1:length(dtGet$ParamR)){ #download all Variables station combos
       cat(paste0(i," "))
+
       #dtGet[i,File:= WDL_downlo_v3(dtGet[i]$ID_Hydstra,dtGet[i]$ParamR,dtGet[i]$Year,replace=replace,ErrorCheck=ErrorCheck)]
+
       ldt[[i]]<-WDL_SiteTraceData(hydstra_id=dtGet[i]$ID_Hydstra, param=dtGet[i]$WDL_Param, range=MkDate(c(dtGet[i]$Start,dtGet[i]$End),ErrorCheck=ErrorCheck),type="RAW",ErrorCheck=ErrorCheck)
+      #if(length(ldt[[i]])>0){ldt[[i]]<-"No Data"}
       dtGet[i,Status:="Downloaded"]
+      print(i)
 
     } #download all Variables station combos
     print("")
@@ -161,7 +168,7 @@ GetData=function(stations,parameters,range=NULL,source="WDL",duration=NULL,
     for(i in 1:length(dtGet$ParamR)){
       cat(paste0(i," "))
 
-      if(length(ldt[[i]])>0){ #if the list is NULL length(ldt[[i]]) should be 0, if empty should be 1
+      if(length(ldt[[i]])>1){ #if the list is NULL length(ldt[[i]]) should be 0, if empty should be 1
         ldt[[i]]<-data.table::data.table(ldt[[i]])
         names(ldt[[i]])<-c("DateTime","value","QC","d")
         ldt[[i]][,DateTime:=MkDate(DateTime)]
@@ -170,7 +177,10 @@ GetData=function(stations,parameters,range=NULL,source="WDL",duration=NULL,
         ldt[[i]][,Source:="WDL"]
         ldt[[i]]<-ldt[[i]][,.(DateTime,Station,Parameter,value,QC,d,Source)]
         dtGet[i,Status:="Proccessed"]
-      }else {dtGet[i,Status:="No data"]}
+      }else {
+        dtGet[i,Status:="No data"]
+        #ldt[[i]]=NULL
+        }
     }
 
 
@@ -182,15 +192,19 @@ GetData=function(stations,parameters,range=NULL,source="WDL",duration=NULL,
     #ldt <- ldt[!sapply(ldt,is.list)]
 
     # Logical condition to identify non-empty, non-NULL elements
-    condition <- !(sapply(ldt, is.null) | (sapply(ldt, is.list) & sapply(ldt, length) == 0))
+    #condition <- !(sapply(ldt, is.null) | (sapply(ldt, is.list) & sapply(ldt, length) == 0))
+    #condition <- !(sapply(ldt,stringr::str_detect(string= ldt,pattern="$No ")))
+    condition <- suppressWarnings(stringr::str_detect(ldt,pattern="^No"))
+
+
 
     # Apply the condition
-    ldt <- ldt[condition]
+    ldt_data <- ldt[!condition]
 
 
 
     DT=NULL
-    DT<-Dmerge(ldt)
+    DT<-Dmerge(ldt_data)
 
 
     if(report|ErrorCheck){View(dtGet)}
